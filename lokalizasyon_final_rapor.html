@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0000dcf4eaeb03813779c546a4777818 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0000dcf4eaeb03813779c546a4777818" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0000dcf4eaeb03813779c546a4777818 = L.map(
+                "map_0000dcf4eaeb03813779c546a4777818",
+                {
+                    center: [36.71424575, 3.003688875],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a841e3263e0900775c8aac9f581df149 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a841e3263e0900775c8aac9f581df149.addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var polygon_381454427436c9265c49e2d0634d1911 = L.polygon(
+                [[36.72081, 2.99444], [36.713538862443706, 2.9911383351386895], [36.714108883380725, 2.9896132888753186], [36.71488251435529, 2.988234899787037], [36.71583624898172, 2.9870450495287946], [36.71694110851599, 2.9860798910985937], [36.71816352236026, 2.985368750346943], [36.719466348088424, 2.9849332349257267], [36.72081, 2.99444]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_a36db28a2b8330a5682e4c40ca889962 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c2a33f096214dcd4217a2cb364ac9505 = $(`<div id="html_c2a33f096214dcd4217a2cb364ac9505" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16X676_10<br><b>P_MAX:</b> -88.0 dBm<br><b>AZIMUTH:</b> 230°<br><b>ORT. MENZİL (AVG):</b> 861m<br><b>MAX MENZİL (MAX):</b> 14430m</div>`)[0];
+                popup_a36db28a2b8330a5682e4c40ca889962.setContent(html_c2a33f096214dcd4217a2cb364ac9505);
+            
+        
+
+        polygon_381454427436c9265c49e2d0634d1911.bindPopup(popup_a36db28a2b8330a5682e4c40ca889962)
+        ;
+
+        
+    
+    
+            var marker_5ef7f1559f2858c0ca432a587ad6c2a9 = L.marker(
+                [36.72081, 2.99444],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_89e2235e061093e0dbbd45a9125c9083 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c3ca0f3494f2f205fb51976312188d9 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_38f2c5a70188a94184608df3a2cb3b73 = $(`<div id="html_38f2c5a70188a94184608df3a2cb3b73" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16X676_10<br>Azimuth: 230°</div>`)[0];
+                popup_3c3ca0f3494f2f205fb51976312188d9.setContent(html_38f2c5a70188a94184608df3a2cb3b73);
+            
+        
+
+        marker_5ef7f1559f2858c0ca432a587ad6c2a9.bindPopup(popup_3c3ca0f3494f2f205fb51976312188d9)
+        ;
+
+        
+    
+    
+                marker_5ef7f1559f2858c0ca432a587ad6c2a9.setIcon(icon_89e2235e061093e0dbbd45a9125c9083);
+            
+    
+            var polygon_1f572d5cc9e47f62564add1de84f9841 = L.polygon(
+                [[36.72081, 2.99444], [36.71878817103845, 2.99880887681354], [36.718210786789214, 2.9983044984212457], [36.71771237831813, 2.9976826991999523], [36.717308089514376, 2.9969623722043535], [36.71701020448867, 2.9961654042057075], [36.716827774326795, 2.9953160106733674], [36.716766342076895, 2.99444], [36.72081, 2.99444]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_793a260443dca1bf117b0ef094779089 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba0e09d89d9e00a3d2acb796af098281 = $(`<div id="html_ba0e09d89d9e00a3d2acb796af098281" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16X676_2<br><b>P_MAX:</b> -92.0 dBm<br><b>AZIMUTH:</b> 150°<br><b>ORT. MENZİL (AVG):</b> 450m<br><b>MAX MENZİL (MAX):</b> 6630m</div>`)[0];
+                popup_793a260443dca1bf117b0ef094779089.setContent(html_ba0e09d89d9e00a3d2acb796af098281);
+            
+        
+
+        polygon_1f572d5cc9e47f62564add1de84f9841.bindPopup(popup_793a260443dca1bf117b0ef094779089)
+        ;
+
+        
+    
+    
+            var marker_9beed4a9b9a17369dc1c696184d7ba76 = L.marker(
+                [36.72081, 2.99444],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_5dbabe676105afd6c6f0a0b7ab3b243e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03faf8630e8ced0a794566d1d7f7e7f0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c01c02227e64bc8b08c31fbda3014463 = $(`<div id="html_c01c02227e64bc8b08c31fbda3014463" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16X676_2<br>Azimuth: 150°</div>`)[0];
+                popup_03faf8630e8ced0a794566d1d7f7e7f0.setContent(html_c01c02227e64bc8b08c31fbda3014463);
+            
+        
+
+        marker_9beed4a9b9a17369dc1c696184d7ba76.bindPopup(popup_03faf8630e8ced0a794566d1d7f7e7f0)
+        ;
+
+        
+    
+    
+                marker_9beed4a9b9a17369dc1c696184d7ba76.setIcon(icon_5dbabe676105afd6c6f0a0b7ab3b243e);
+            
+    
+            var polygon_05427732a6842d39c0ca416ecf2939cc = L.polygon(
+                [[36.70926, 3.00581], [36.712118605821054, 2.9996338993038316], [36.712934952805504, 3.0003469182038214], [36.713639638208576, 3.0012259300797353], [36.71421125052088, 3.002244226600525], [36.71463242159157, 3.0033708673416895], [36.714890354350764, 3.0045716198944157], [36.714977211642115, 3.00581], [36.70926, 3.00581]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_0b249df321cb61295f40e01e87d897fb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4820d0ea12658e02d060dc5576bd1f60 = $(`<div id="html_4820d0ea12658e02d060dc5576bd1f60" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16X1528_10<br><b>P_MAX:</b> -93.0 dBm<br><b>AZIMUTH:</b> 330°<br><b>ORT. MENZİL (AVG):</b> 636m<br><b>MAX MENZİL (MAX):</b> 3510m</div>`)[0];
+                popup_0b249df321cb61295f40e01e87d897fb.setContent(html_4820d0ea12658e02d060dc5576bd1f60);
+            
+        
+
+        polygon_05427732a6842d39c0ca416ecf2939cc.bindPopup(popup_0b249df321cb61295f40e01e87d897fb)
+        ;
+
+        
+    
+    
+            var marker_cd82ab0ddb01a3eead35b70c6cab892a = L.marker(
+                [36.70926, 3.00581],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_c93b3ed4cf480addf7c48958e187b678 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_58745926d849e76a3d0a504cdf4aaf05 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_16ac133c01426361f8e9200f02db1637 = $(`<div id="html_16ac133c01426361f8e9200f02db1637" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16X1528_10<br>Azimuth: 330°</div>`)[0];
+                popup_58745926d849e76a3d0a504cdf4aaf05.setContent(html_16ac133c01426361f8e9200f02db1637);
+            
+        
+
+        marker_cd82ab0ddb01a3eead35b70c6cab892a.bindPopup(popup_58745926d849e76a3d0a504cdf4aaf05)
+        ;
+
+        
+    
+    
+                marker_cd82ab0ddb01a3eead35b70c6cab892a.setIcon(icon_c93b3ed4cf480addf7c48958e187b678);
+            
+    
+            var polygon_1c4e3b7841398dc41684e34e46d7e804 = L.polygon(
+                [[36.722, 3.0197], [36.70987214383216, 3.022367929173832], [36.70968505210205, 3.0197], [36.70987214383216, 3.0170320708261675], [36.710427734334935, 3.014445205330244], [36.71133494227409, 3.0120180041113076], [36.712566202595475, 3.009824216450171], [36.714084104077266, 3.0079304994748086], [36.722, 3.0197]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_cc0c9c3f22d93e2a89387a02c7e8ebfa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0a269ef33299c5b672760c2d79b9d15 = $(`<div id="html_d0a269ef33299c5b672760c2d79b9d15" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16X1118_3<br><b>P_MAX:</b> -95.0 dBm<br><b>AZIMUTH:</b> 200°<br><b>ORT. MENZİL (AVG):</b> 1370m<br><b>MAX MENZİL (MAX):</b> 14430m</div>`)[0];
+                popup_cc0c9c3f22d93e2a89387a02c7e8ebfa.setContent(html_d0a269ef33299c5b672760c2d79b9d15);
+            
+        
+
+        polygon_1c4e3b7841398dc41684e34e46d7e804.bindPopup(popup_cc0c9c3f22d93e2a89387a02c7e8ebfa)
+        ;
+
+        
+    
+    
+            var marker_e49fb37bbfdb3160e67ee4fe4ec0dfb7 = L.marker(
+                [36.722, 3.0197],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_a9fa2c3e944d97fa52ffb6ee51eb4180 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c783f7803eb6bd21ff15717fad970ed = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2c0a645c889efac04501f22752bb479d = $(`<div id="html_2c0a645c889efac04501f22752bb479d" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16X1118_3<br>Azimuth: 200°</div>`)[0];
+                popup_3c783f7803eb6bd21ff15717fad970ed.setContent(html_2c0a645c889efac04501f22752bb479d);
+            
+        
+
+        marker_e49fb37bbfdb3160e67ee4fe4ec0dfb7.bindPopup(popup_3c783f7803eb6bd21ff15717fad970ed)
+        ;
+
+        
+    
+    
+                marker_e49fb37bbfdb3160e67ee4fe4ec0dfb7.setIcon(icon_a9fa2c3e944d97fa52ffb6ee51eb4180);
+            
+    
+            var polygon_915f86ec83e80d605f9b012f4b4f1647 = L.polygon(
+                [[36.70781, 2.99477], [36.71171406031185, 2.990683783993399], [36.71222360215891, 2.991591488198416], [36.71259903893775, 2.99259576987612], [36.712828963191846, 2.993666114435924], [36.71290638878908, 2.99477], [36.712828963191846, 2.995873885564076], [36.71259903893775, 2.99694423012388], [36.70781, 2.99477]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_1de7b490084a7e7ca60f6f19e81106f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7149e960bd52384f138ced72095acc5f = $(`<div id="html_7149e960bd52384f138ced72095acc5f" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16X199_3<br><b>P_MAX:</b> -97.0 dBm<br><b>AZIMUTH:</b> 350°<br><b>ORT. MENZİL (AVG):</b> 567m<br><b>MAX MENZİL (MAX):</b> 1950m</div>`)[0];
+                popup_1de7b490084a7e7ca60f6f19e81106f5.setContent(html_7149e960bd52384f138ced72095acc5f);
+            
+        
+
+        polygon_915f86ec83e80d605f9b012f4b4f1647.bindPopup(popup_1de7b490084a7e7ca60f6f19e81106f5)
+        ;
+
+        
+    
+    
+            var marker_1d26ea32f198e098805ab5c8e5a2b092 = L.marker(
+                [36.70781, 2.99477],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_0d416505c36736f9b8f6af3a4593720e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c73c167b0bc0e369b8d446ab757c418 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3e215e15c18e3bafe2d1288103cbe072 = $(`<div id="html_3e215e15c18e3bafe2d1288103cbe072" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16X199_3<br>Azimuth: 350°</div>`)[0];
+                popup_6c73c167b0bc0e369b8d446ab757c418.setContent(html_3e215e15c18e3bafe2d1288103cbe072);
+            
+        
+
+        marker_1d26ea32f198e098805ab5c8e5a2b092.bindPopup(popup_6c73c167b0bc0e369b8d446ab757c418)
+        ;
+
+        
+    
+    
+                marker_1d26ea32f198e098805ab5c8e5a2b092.setIcon(icon_0d416505c36736f9b8f6af3a4593720e);
+            
+    
+            var polygon_65b656e58266b16fe41f24000dcf06d3 = L.polygon(
+                [[36.709881, 3.018281], [36.72539555103981, 3.0071076973656026], [36.72671527421783, 3.0106380108631243], [36.727523496492296, 3.0144005527180315], [36.72779566043838, 3.018281], [36.727523496492296, 3.0221614472819684], [36.72671527421783, 3.0259239891368757], [36.72539555103981, 3.0294543026343974], [36.709881, 3.018281]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_891c8043fe3bd71be541a700d570aff5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b5708a6511c9592b3b8129a1b4b4817 = $(`<div id="html_7b5708a6511c9592b3b8129a1b4b4817" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16X1040_111<br><b>P_MAX:</b> -98.0 dBm<br><b>AZIMUTH:</b> 0°<br><b>ORT. MENZİL (AVG):</b> 1994m<br><b>MAX MENZİL (MAX):</b> 6630m</div>`)[0];
+                popup_891c8043fe3bd71be541a700d570aff5.setContent(html_7b5708a6511c9592b3b8129a1b4b4817);
+            
+        
+
+        polygon_65b656e58266b16fe41f24000dcf06d3.bindPopup(popup_891c8043fe3bd71be541a700d570aff5)
+        ;
+
+        
+    
+    
+            var marker_c5a31aeb9d2ba1f0d817433db72eed83 = L.marker(
+                [36.709881, 3.018281],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_c777c17214e992f6e7f92fe2eddc5cb4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8eee652f511dc45db3b5ee4ebe41ef64 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c6951823c24e16c510018e86276fae71 = $(`<div id="html_c6951823c24e16c510018e86276fae71" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16X1040_111<br>Azimuth: 0°</div>`)[0];
+                popup_8eee652f511dc45db3b5ee4ebe41ef64.setContent(html_c6951823c24e16c510018e86276fae71);
+            
+        
+
+        marker_c5a31aeb9d2ba1f0d817433db72eed83.bindPopup(popup_8eee652f511dc45db3b5ee4ebe41ef64)
+        ;
+
+        
+    
+    
+                marker_c5a31aeb9d2ba1f0d817433db72eed83.setIcon(icon_c777c17214e992f6e7f92fe2eddc5cb4);
+            
+    
+            var polygon_fdf0de252eb89eae9942a9932dcf1a17 = L.polygon(
+                [[36.71898, 2.99586], [36.71388921876321, 3.0003069846325903], [36.71334757228506, 2.999136593660941], [36.71297706427288, 2.99786664504894], [36.712788952425136, 2.9965357255425387], [36.712788952425136, 2.9951842744574613], [36.71297706427288, 2.9938533549510598], [36.71334757228506, 2.992583406339059], [36.71898, 2.99586]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_bc0354d8dd3794d6259d0338a169d316 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1a38fc2c15dcffe29aaf583cd6c29ba = $(`<div id="html_d1a38fc2c15dcffe29aaf583cd6c29ba" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16M732_2<br><b>P_MAX:</b> -98.0 dBm<br><b>AZIMUTH:</b> 175°<br><b>ORT. MENZİL (AVG):</b> 691m<br><b>MAX MENZİL (MAX):</b> 6630m</div>`)[0];
+                popup_bc0354d8dd3794d6259d0338a169d316.setContent(html_d1a38fc2c15dcffe29aaf583cd6c29ba);
+            
+        
+
+        polygon_fdf0de252eb89eae9942a9932dcf1a17.bindPopup(popup_bc0354d8dd3794d6259d0338a169d316)
+        ;
+
+        
+    
+    
+            var marker_fbb586d54829f0d7ace6606673788dc4 = L.marker(
+                [36.71898, 2.99586],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_311f4d46c28f377a95d013136a4cadb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d766a65031528668e22e67fa6e50f480 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6feb04ff62c69730756f240b527d18cf = $(`<div id="html_6feb04ff62c69730756f240b527d18cf" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16M732_2<br>Azimuth: 175°</div>`)[0];
+                popup_d766a65031528668e22e67fa6e50f480.setContent(html_6feb04ff62c69730756f240b527d18cf);
+            
+        
+
+        marker_fbb586d54829f0d7ace6606673788dc4.bindPopup(popup_d766a65031528668e22e67fa6e50f480)
+        ;
+
+        
+    
+    
+                marker_fbb586d54829f0d7ace6606673788dc4.setIcon(icon_311f4d46c28f377a95d013136a4cadb2);
+            
+    
+            var polygon_ae09ad4aa9e284c016c991c2fe41d0bb = L.polygon(
+                [[36.70926, 3.00581], [36.70417618863755, 3.003501899246641], [36.70457473410502, 3.002435782430655], [36.705115639005854, 3.001472189508077], [36.705782468218345, 3.000640398762258], [36.70655496047431, 2.999965683734103], [36.70740964398744, 2.999468545298321], [36.70832054963169, 2.9991640887547186], [36.70926, 3.00581]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_9cb02054d0886709a01b612ce6fe81fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_516238ddc862899f904aebd60e11f6f9 = $(`<div id="html_516238ddc862899f904aebd60e11f6f9" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16X1528_43<br><b>P_MAX:</b> -98.0 dBm<br><b>AZIMUTH:</b> 230°<br><b>ORT. MENZİL (AVG):</b> 602m<br><b>MAX MENZİL (MAX):</b> 6630m</div>`)[0];
+                popup_9cb02054d0886709a01b612ce6fe81fd.setContent(html_516238ddc862899f904aebd60e11f6f9);
+            
+        
+
+        polygon_ae09ad4aa9e284c016c991c2fe41d0bb.bindPopup(popup_9cb02054d0886709a01b612ce6fe81fd)
+        ;
+
+        
+    
+    
+            var marker_b5ce4eabf0d4c2b4402042cedb3b97ed = L.marker(
+                [36.70926, 3.00581],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_7143c4af51924ece09dcd5abf766309e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c8b5ed9bdf6b5b0c49d76ab91155995 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_cedf8dd2f86906e85ab372ae71eb8c0e = $(`<div id="html_cedf8dd2f86906e85ab372ae71eb8c0e" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16X1528_43<br>Azimuth: 230°</div>`)[0];
+                popup_1c8b5ed9bdf6b5b0c49d76ab91155995.setContent(html_cedf8dd2f86906e85ab372ae71eb8c0e);
+            
+        
+
+        marker_b5ce4eabf0d4c2b4402042cedb3b97ed.bindPopup(popup_1c8b5ed9bdf6b5b0c49d76ab91155995)
+        ;
+
+        
+    
+    
+                marker_b5ce4eabf0d4c2b4402042cedb3b97ed.setIcon(icon_7143c4af51924ece09dcd5abf766309e);
+            
+    
+            var polygon_a9c52243d3e1d302645ec869acd3a4c4 = L.polygon(
+                [[36.71673, 3.00263], [36.713282180674305, 2.999020893303418], [36.713836936075445, 2.9983288341282925], [36.71447959575997, 2.9977674637016842], [36.71519063283857, 2.997353838979938], [36.715948442809406, 2.99710052774092], [36.71673, 2.997015226718446], [36.71751155719059, 2.99710052774092], [36.71673, 3.00263]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_ee6a6c8b8bbd72c8bed759d1351a520a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fee8de2f8146612eb122bba13983af5a = $(`<div id="html_fee8de2f8146612eb122bba13983af5a" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16X661_3<br><b>P_MAX:</b> -99.0 dBm<br><b>AZIMUTH:</b> 250°<br><b>ORT. MENZİL (AVG):</b> 501m<br><b>MAX MENZİL (MAX):</b> 1950m</div>`)[0];
+                popup_ee6a6c8b8bbd72c8bed759d1351a520a.setContent(html_fee8de2f8146612eb122bba13983af5a);
+            
+        
+
+        polygon_a9c52243d3e1d302645ec869acd3a4c4.bindPopup(popup_ee6a6c8b8bbd72c8bed759d1351a520a)
+        ;
+
+        
+    
+    
+            var marker_39229c494b0bcf96922a4cea31b675aa = L.marker(
+                [36.71673, 3.00263],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_7d210cd3dd672a6d7856bf3efe00965f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_716a3b8362d85e44bdd3283193791526 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_cc2d9b1ae6d2c89a25ac5f85ada861a9 = $(`<div id="html_cc2d9b1ae6d2c89a25ac5f85ada861a9" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16X661_3<br>Azimuth: 250°</div>`)[0];
+                popup_716a3b8362d85e44bdd3283193791526.setContent(html_cc2d9b1ae6d2c89a25ac5f85ada861a9);
+            
+        
+
+        marker_39229c494b0bcf96922a4cea31b675aa.bindPopup(popup_716a3b8362d85e44bdd3283193791526)
+        ;
+
+        
+    
+    
+                marker_39229c494b0bcf96922a4cea31b675aa.setIcon(icon_7d210cd3dd672a6d7856bf3efe00965f);
+            
+    
+            var polygon_89a002284d463fc451d48157ac374567 = L.polygon(
+                [[36.70926, 3.00581], [36.71645773486997, 3.013343709028031], [36.7152996166747, 3.014788324799715], [36.71395798778297, 3.0159601387156116], [36.71247361290975, 3.0168235458028523], [36.71089159403443, 3.0173523118739967], [36.70926, 3.0175303706395407], [36.70762840596557, 3.0173523118739967], [36.70926, 3.00581]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_a042128523390be429726e926455f562 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46e4570a67c53adb19914f4aafd92c16 = $(`<div id="html_46e4570a67c53adb19914f4aafd92c16" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16X1528_1<br><b>P_MAX:</b> -100.0 dBm<br><b>AZIMUTH:</b> 70°<br><b>ORT. MENZİL (AVG):</b> 1045m<br><b>MAX MENZİL (MAX):</b> 3510m</div>`)[0];
+                popup_a042128523390be429726e926455f562.setContent(html_46e4570a67c53adb19914f4aafd92c16);
+            
+        
+
+        polygon_89a002284d463fc451d48157ac374567.bindPopup(popup_a042128523390be429726e926455f562)
+        ;
+
+        
+    
+    
+            var marker_a1ee925af4377c0a9cf48bc54775df55 = L.marker(
+                [36.70926, 3.00581],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_fa3612821c89c9db614bf3acc59418c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3036ff61096ce6857db1bfbfb46c609d = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1de2727d70d5f25cb8f8557bafc87d52 = $(`<div id="html_1de2727d70d5f25cb8f8557bafc87d52" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16X1528_1<br>Azimuth: 70°</div>`)[0];
+                popup_3036ff61096ce6857db1bfbfb46c609d.setContent(html_1de2727d70d5f25cb8f8557bafc87d52);
+            
+        
+
+        marker_a1ee925af4377c0a9cf48bc54775df55.bindPopup(popup_3036ff61096ce6857db1bfbfb46c609d)
+        ;
+
+        
+    
+    
+                marker_a1ee925af4377c0a9cf48bc54775df55.setIcon(icon_fa3612821c89c9db614bf3acc59418c0);
+            
+    
+            var polygon_e841f27569b3fb7e8e536b210cb4fa66 = L.polygon(
+                [[36.71898, 2.99586], [36.72122804813753, 3.003565381579171], [36.720121363951826, 3.0039353209626554], [36.71898, 3.004059895804999], [36.71783863604818, 3.0039353209626554], [36.71673195186247, 3.003565381579171], [36.71569357348186, 3.0029613180755144], [36.714755051507986, 3.002141484615574], [36.71898, 2.99586]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_3da6ebac1c8710ce42008cc919bef29a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_67408a08f9739f7cb2748a64883d73d4 = $(`<div id="html_67408a08f9739f7cb2748a64883d73d4" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16M732_1<br><b>P_MAX:</b> -101.0 dBm<br><b>AZIMUTH:</b> 100°<br><b>ORT. MENZİL (AVG):</b> 731m<br><b>MAX MENZİL (MAX):</b> 14430m</div>`)[0];
+                popup_3da6ebac1c8710ce42008cc919bef29a.setContent(html_67408a08f9739f7cb2748a64883d73d4);
+            
+        
+
+        polygon_e841f27569b3fb7e8e536b210cb4fa66.bindPopup(popup_3da6ebac1c8710ce42008cc919bef29a)
+        ;
+
+        
+    
+    
+            var marker_7dea52aa05e01ce4bd13afaf774d5057 = L.marker(
+                [36.71898, 2.99586],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_9ef935dec26bf0cfab3a7f423ea39fd8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0eee9609c48c7753d9e070a33d702b0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ed51edfc5321f74a3146b8b99108380c = $(`<div id="html_ed51edfc5321f74a3146b8b99108380c" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16M732_1<br>Azimuth: 100°</div>`)[0];
+                popup_f0eee9609c48c7753d9e070a33d702b0.setContent(html_ed51edfc5321f74a3146b8b99108380c);
+            
+        
+
+        marker_7dea52aa05e01ce4bd13afaf774d5057.bindPopup(popup_f0eee9609c48c7753d9e070a33d702b0)
+        ;
+
+        
+    
+    
+                marker_7dea52aa05e01ce4bd13afaf774d5057.setIcon(icon_9ef935dec26bf0cfab3a7f423ea39fd8);
+            
+    
+            var polygon_40228ec60786f644e5d5efe4453d5e70 = L.polygon(
+                [[36.70926, 3.00581], [36.713806846927774, 2.995986405480897], [36.71510531373663, 2.997120520499828], [36.716226173645474, 2.9985186609562833], [36.71713536989315, 3.000138345059986], [36.71780527701175, 3.0019303595290454], [36.71821554021247, 3.003840254910622], [36.718353693855555, 3.00581], [36.70926, 3.00581]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_64e3bd1b28e39d32fa49cbaf319223fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4cfebfb4de3a174b9309eb6aa7b95240 = $(`<div id="html_4cfebfb4de3a174b9309eb6aa7b95240" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16X1528_50<br><b>P_MAX:</b> -101.0 dBm<br><b>AZIMUTH:</b> 330°<br><b>ORT. MENZİL (AVG):</b> 1012m<br><b>MAX MENZİL (MAX):</b> 3510m</div>`)[0];
+                popup_64e3bd1b28e39d32fa49cbaf319223fd.setContent(html_4cfebfb4de3a174b9309eb6aa7b95240);
+            
+        
+
+        polygon_40228ec60786f644e5d5efe4453d5e70.bindPopup(popup_64e3bd1b28e39d32fa49cbaf319223fd)
+        ;
+
+        
+    
+    
+            var marker_1231117830498037857354a0ed99871b = L.marker(
+                [36.70926, 3.00581],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_28fc44454f84bd4d1355ace9ba0f59ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91f8a366e0bac31cc0c4174ec555225c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e9a6c17caf6375f0e54a49d9e88d268d = $(`<div id="html_e9a6c17caf6375f0e54a49d9e88d268d" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16X1528_50<br>Azimuth: 330°</div>`)[0];
+                popup_91f8a366e0bac31cc0c4174ec555225c.setContent(html_e9a6c17caf6375f0e54a49d9e88d268d);
+            
+        
+
+        marker_1231117830498037857354a0ed99871b.bindPopup(popup_91f8a366e0bac31cc0c4174ec555225c)
+        ;
+
+        
+    
+    
+                marker_1231117830498037857354a0ed99871b.setIcon(icon_28fc44454f84bd4d1355ace9ba0f59ca);
+            
+    
+            var polygon_5b05d5b49ab7c435edbb7c0e756b4b3b = L.polygon(
+                [[36.722, 3.0197], [36.7225888626219, 3.0155335449136382], [36.723159832951005, 3.015724414828666], [36.7236955623428, 3.016036080887382], [36.7241797729308, 3.0164590732743015], [36.72459775222132, 3.016980539579794], [36.72493680012512, 3.0175846353140408], [36.72518661484322, 3.018253005333844], [36.722, 3.0197]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_a14240a03c79412f169bfb3368def05a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85e3b33a72a7aa445affc75dfd0d1931 = $(`<div id="html_85e3b33a72a7aa445affc75dfd0d1931" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16X1118_10<br><b>P_MAX:</b> -101.0 dBm<br><b>AZIMUTH:</b> 310°<br><b>ORT. MENZİL (AVG):</b> 377m<br><b>MAX MENZİL (MAX):</b> 3510m</div>`)[0];
+                popup_a14240a03c79412f169bfb3368def05a.setContent(html_85e3b33a72a7aa445affc75dfd0d1931);
+            
+        
+
+        polygon_5b05d5b49ab7c435edbb7c0e756b4b3b.bindPopup(popup_a14240a03c79412f169bfb3368def05a)
+        ;
+
+        
+    
+    
+            var marker_225340cbdcc45c4293ed9a07c24e895c = L.marker(
+                [36.722, 3.0197],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_af797a1a559a85ad23add134655da13d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e59feefedcef36e77bdbd54a338337f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c001621b27d7194e927d4199e884ffbe = $(`<div id="html_c001621b27d7194e927d4199e884ffbe" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16X1118_10<br>Azimuth: 310°</div>`)[0];
+                popup_9e59feefedcef36e77bdbd54a338337f.setContent(html_c001621b27d7194e927d4199e884ffbe);
+            
+        
+
+        marker_225340cbdcc45c4293ed9a07c24e895c.bindPopup(popup_9e59feefedcef36e77bdbd54a338337f)
+        ;
+
+        
+    
+    
+                marker_225340cbdcc45c4293ed9a07c24e895c.setIcon(icon_af797a1a559a85ad23add134655da13d);
+            
+    
+            var polygon_724fdebcb998940f24f56765be490027 = L.polygon(
+                [[36.70003, 2.99622], [36.70879745696691, 2.9899066433249155], [36.70954324820134, 2.991901409690243], [36.7099999842031, 2.9940273942368205], [36.710153787279914, 2.99622], [36.7099999842031, 2.9984126057631797], [36.70954324820134, 3.0005385903097572], [36.70879745696691, 3.0025333566750847], [36.70003, 2.99622]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_d51bf9f2d1cbaf3163d4207c96d99b5d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af50a2e9ae531ec5e65b1f1d508f2094 = $(`<div id="html_af50a2e9ae531ec5e65b1f1d508f2094" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16X063_1<br><b>P_MAX:</b> -102.0 dBm<br><b>AZIMUTH:</b> 0°<br><b>ORT. MENZİL (AVG):</b> 1126m<br><b>MAX MENZİL (MAX):</b> 6630m</div>`)[0];
+                popup_d51bf9f2d1cbaf3163d4207c96d99b5d.setContent(html_af50a2e9ae531ec5e65b1f1d508f2094);
+            
+        
+
+        polygon_724fdebcb998940f24f56765be490027.bindPopup(popup_d51bf9f2d1cbaf3163d4207c96d99b5d)
+        ;
+
+        
+    
+    
+            var marker_0bd02a33629b2f9a95e4b302c2e9e097 = L.marker(
+                [36.70003, 2.99622],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_021fcf6fe3b3557d986189ed9d91f032 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b06186334fcb53f164bac7e570215725 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_71bee1f70b95881c843e79ea2afa7b73 = $(`<div id="html_71bee1f70b95881c843e79ea2afa7b73" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16X063_1<br>Azimuth: 0°</div>`)[0];
+                popup_b06186334fcb53f164bac7e570215725.setContent(html_71bee1f70b95881c843e79ea2afa7b73);
+            
+        
+
+        marker_0bd02a33629b2f9a95e4b302c2e9e097.bindPopup(popup_b06186334fcb53f164bac7e570215725)
+        ;
+
+        
+    
+    
+                marker_0bd02a33629b2f9a95e4b302c2e9e097.setIcon(icon_021fcf6fe3b3557d986189ed9d91f032);
+            
+    
+            var polygon_5d82399e72c2ad5589c62ba15a94f5df = L.polygon(
+                [[36.72298, 2.9856], [36.72298, 2.9925851073734835], [36.722007776111994, 2.9924789878970293], [36.721065092754856, 2.9921638538542594], [36.72018059288538, 2.991649280433599], [36.7193811515845, 2.9909509026880463], [36.71869105947163, 2.9900899404720054], [36.7181312846464, 2.9890925536867416], [36.72298, 2.9856]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_9b8c8ce0e8141876fbd629b8f468c3a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_148861da9b1d5ae6f07548874f9c2a5b = $(`<div id="html_148861da9b1d5ae6f07548874f9c2a5b" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16X753_2<br><b>P_MAX:</b> -102.0 dBm<br><b>AZIMUTH:</b> 120°<br><b>ORT. MENZİL (AVG):</b> 623m<br><b>MAX MENZİL (MAX):</b> 1950m</div>`)[0];
+                popup_9b8c8ce0e8141876fbd629b8f468c3a4.setContent(html_148861da9b1d5ae6f07548874f9c2a5b);
+            
+        
+
+        polygon_5d82399e72c2ad5589c62ba15a94f5df.bindPopup(popup_9b8c8ce0e8141876fbd629b8f468c3a4)
+        ;
+
+        
+    
+    
+            var marker_6ec4f719ebd3967be142fe4aef3453df = L.marker(
+                [36.72298, 2.9856],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_50695f188ff16789c3042db81335c747 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81b5fbd7fba6c442ab14002f8290c21f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_dd5e0c12982be5fcf253b8e63792f278 = $(`<div id="html_dd5e0c12982be5fcf253b8e63792f278" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16X753_2<br>Azimuth: 120°</div>`)[0];
+                popup_81b5fbd7fba6c442ab14002f8290c21f.setContent(html_dd5e0c12982be5fcf253b8e63792f278);
+            
+        
+
+        marker_6ec4f719ebd3967be142fe4aef3453df.bindPopup(popup_81b5fbd7fba6c442ab14002f8290c21f)
+        ;
+
+        
+    
+    
+                marker_6ec4f719ebd3967be142fe4aef3453df.setIcon(icon_50695f188ff16789c3042db81335c747);
+            
+    
+            var polygon_f688b6d271e68736669d6c95c9f400b5 = L.polygon(
+                [[36.709881, 3.018281], [36.70702206554287, 3.0084829126319588], [36.7084294809353, 3.0080125013534236], [36.709881, 3.0078540932101534], [36.711332519064705, 3.0080125013534236], [36.71273993445713, 3.0084829126319588], [36.71406048257277, 3.0092510338371006], [36.71525403922535, 3.0102935259947183], [36.709881, 3.018281]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+        var popup_a0a380f1d08f90e351125b5153553914 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cad18b9deb9ba9d7859e8f4450e59307 = $(`<div id="html_cad18b9deb9ba9d7859e8f4450e59307" style="width: 100.0%; height: 100.0%;"><b>CELL:</b> 4A16X1040_10<br><b>P_MAX:</b> -103.0 dBm<br><b>AZIMUTH:</b> 280°<br><b>ORT. MENZİL (AVG):</b> 930m<br><b>MAX MENZİL (MAX):</b> 3510m</div>`)[0];
+                popup_a0a380f1d08f90e351125b5153553914.setContent(html_cad18b9deb9ba9d7859e8f4450e59307);
+            
+        
+
+        polygon_f688b6d271e68736669d6c95c9f400b5.bindPopup(popup_a0a380f1d08f90e351125b5153553914)
+        ;
+
+        
+    
+    
+            var marker_6ef74691c535814d1c1754e18421542d = L.marker(
+                [36.709881, 3.018281],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_ac9fd60d5bfe578df405cf386efd3537 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "broadcast-tower",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e371351277e6c575e512ecc8742d55b4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1449363239727a8e86c2ed7d77d20a2d = $(`<div id="html_1449363239727a8e86c2ed7d77d20a2d" style="width: 100.0%; height: 100.0%;">Hücre Konumu: 4A16X1040_10<br>Azimuth: 280°</div>`)[0];
+                popup_e371351277e6c575e512ecc8742d55b4.setContent(html_1449363239727a8e86c2ed7d77d20a2d);
+            
+        
+
+        marker_6ef74691c535814d1c1754e18421542d.bindPopup(popup_e371351277e6c575e512ecc8742d55b4)
+        ;
+
+        
+    
+    
+                marker_6ef74691c535814d1c1754e18421542d.setIcon(icon_ac9fd60d5bfe578df405cf386efd3537);
+            
+    
+            var heat_map_263bf030a04ec6472e3bf5a5468e0e5e = L.heatLayer(
+                [[36.717651653651124, 2.989744184963211, 1.0], [36.7185862766661, 2.996041713679044, 0.7333333333333333], [36.712404058467655, 3.003545723530233, 0.6666666666666666], [36.714651577677046, 3.0163631901158006, 0.5333333333333333], [36.710997056210466, 2.9940690294592414, 0.4], [36.72125686143316, 3.018281, 0.3333333333333333], [36.71504866680058, 2.996289087682973, 0.3333333333333333], [36.70705175721395, 3.002527288192676, 0.3333333333333333], [36.71575249737953, 2.999279622421272, 0.26666666666666666], [36.71130065353552, 3.01280363358697, 0.2], [36.718255230574115, 3.000987852275818, 0.13333333333333333], [36.71426088276567, 3.0022084826329123, 0.13333333333333333], [36.72338416214484, 3.0176420021119914, 0.13333333333333333], [36.70645863433952, 2.9962200000000005, 0.06666666666666667], [36.72120236834795, 2.989441310652783, 0.06666666666666667], [36.71080271882378, 3.011760473522155, 0.0]],
+                {
+  "minOpacity": 0.4,
+  "maxZoom": 18,
+  "radius": 22,
+  "blur": 18,
+  "gradient": {
+  0.4: "blue",
+  0.65: "lime",
+  0.85: "yellow",
+  1.0: "red",
+},
+}
+            );
+        
+    
+            heat_map_263bf030a04ec6472e3bf5a5468e0e5e.addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var marker_f8e0892814d46f15a139862fc83a2530 = L.marker(
+                [36.71537024153087, 3.001021910155253],
+                {
+}
+            ).addTo(map_0000dcf4eaeb03813779c546a4777818);
+        
+    
+            var icon_0cae5b2a4e6efd91df45f39fe252d252 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "times",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d86148380b03218885eb4ca50ebbe28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bcc53ff483109cdaf4a582ff0dcc885f = $(`<div id="html_bcc53ff483109cdaf4a582ff0dcc885f" style="width: 100.0%; height: 100.0%;"><b>Tahmini Kaynak Noktası</b><br>LAT: 36.71537<br>LON: 3.00102</div>`)[0];
+                popup_3d86148380b03218885eb4ca50ebbe28.setContent(html_bcc53ff483109cdaf4a582ff0dcc885f);
+            
+        
+
+        marker_f8e0892814d46f15a139862fc83a2530.bindPopup(popup_3d86148380b03218885eb4ca50ebbe28)
+        ;
+
+        
+    
+    
+                marker_f8e0892814d46f15a139862fc83a2530.setIcon(icon_0cae5b2a4e6efd91df45f39fe252d252);
+            
+</script>
+</html>
